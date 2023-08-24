@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones ETP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Consulta DNI</a>
+                <hr>
+                <ul class="nav-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="fondosprovinciales.html">Fondos Provinciales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <div class="container">
+        <h1>Consulta de Datos de Inversiones</h1>
+        <label for="dni">Ingrese CUE: </label>
+        <input type="text" id="dni" placeholder="Ej: 12345678">
+        <button id="consultButton">Consultar</button>
+        
+        <div id="results">
+            <h2>Resultados:</h2>
+            <table id="dataTable">
+                <tr>
+                    <th>CUE</th>
+                    <th>Escuela</th>
+                    <th>Localidad</th>
+                    <th>Linea</th>
+                    <th>Resolucion</th>
+                    <th>Acreditado</th>
+                    <th>Ejecutado</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+ 
+    
+    
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Consulta DNI. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>

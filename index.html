@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones ETP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</head>
+    
+
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="sidebar">
+               
+                <ul class="nav-menu">
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>Cerrar Sesion</a></li>
+                    
+                </ul>
+            </nav>
+            
+            <main class="content">
+    </header>
+    
+    <div class="container">
+        <h1>Ejecución Presupuestaria por Proyecto de Inversión – 2023
+            Actualizado al 31/07/2023</h1>
+        <h4>Información provisoria sujeta a adecuaciones presupuestarias</h4>
+
+        <label for="CueInput">Ingrese CUE: </label>
+        <input type="text" id="Cue" placeholder="Buscar por CUE">
+
+        <label for="provincia">Selecciona una Juridiccion:</label>
+    <select id="provincia" name="provincia">
+        <option value="Buenos Aires">Buenos Aires</option>
+        <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+        <option value="Catamarca">Catamarca</option>
+        <option value="Chaco">Chaco</option>
+        <option value="Chubut">Chubut</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Corrientes">Corrientes</option>
+        <option value="Entre Ríos">Entre Ríos</option>
+        <option value="Formosa">Formosa</option>
+        <option value="Jujuy">Jujuy</option>
+        <option value="La Pampa">La Pampa</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Mendoza">Mendoza</option>
+        <option value="Misiones">Misiones</option>
+        <option value="Neuquén">Neuquén</option>
+        <option value="Río Negro">Río Negro</option>
+        <option value="Salta">Salta</option>
+        <option value="San Juan">San Juan</option>
+        <option value="San Luis">San Luis</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Santa Fe">Santa Fe</option>
+        <option value="Santiago del Estero">Santiago del Estero</option>
+        <option value="Tierra del Fuego">Tierra del Fuego</option>
+        <option value="Tucumán">Tucumán</option>
+    </select>
+
+<br> <br>
+        <button id="consultButton">Consultar</button>
+        <button id="volvertButton">Volver</button>
+        <button id="limpiarButton">Limpiar Tabla</button>
+        <button id="exportartButton">Exportar</button>
+        
+        
+        <div id="results">
+            <h2>Resultados:</h2>
+            <table id="dataTable">
+                <tr>
+                    <th>Cue</th>
+                    <th>Escuela</th>
+                    <th>Localidad</th>
+                    <th>Linea</th>
+                    <th>Resolucion</th>
+                    <th>Acreditado</th>
+                    <th>Ejecutado</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+   
+    <div class="container">
+        <h1>Localizador de Lugares</h1>
+        <div class="search-box">
+          <input type="text" id="location-input" placeholder="Ingresa la ubicación">
+          <button id="search-button">Buscar</button>
+        </div>
+        <div class="results">
+          <h2>Locales Cercanos</h2>
+          <ul id="nearby-places">
+            <!-- Aquí se mostrarán los lugares cercanos -->
+          </ul>
+        </div>
+      </div>
+      <script src="script.js"></script>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Consulta DNI. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>

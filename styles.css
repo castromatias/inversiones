@@ -1,0 +1,299 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.logout-button{
+    float: right;
+    height: 30px;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+/* Estilos para el encabezado */
+
+form{
+    padding: ;
+    margin: 0px;
+}
+/* Estilos para el formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la tabla */
+
+
+#results {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 11px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+   
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ... Estilos para dispositivos móviles ... */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+select {
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select:hover {
+    border-color: #999;
+}
+
+select:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 10px #00000080;
+}
+/* Estilos para el menú con iconos */
+.nav-menu li {
+    margin-bottom: 10px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #2ec543;
+}
+
+.nav-menu i {
+    font-size: 40px;
+    margin-right: 10px;
+    max-width: 30 px;
+   float: left;
+}
+
+/* ... Estilos anteriores ... */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* ... Estilos anteriores ... */
+}
+
+
+/* Estilos para el contenido principal */
+.content {
+    margin: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.content.active {
+    margin-left: 260px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #42abf0;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu a {
+    color: #090808;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #007BFF;
+}
+/* Estilos para el footer */
+footer {
+
+    background-color: rgb(235, 235, 235);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer p {
+    margin: 0;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .content.active {
+        margin-left: 0;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .search-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #location-input {
+    padding: 10px;
+    width: 60%;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .results {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #nearby-places {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #nearby-places li {
+    margin-bottom: 10px;
+  }
+
+  #map {
+    height: 100vh;
+  }
+
